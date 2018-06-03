@@ -1,6 +1,11 @@
 {
+    // Set wordwrap at width of editor on modern screen
     "editor.wordWrap": "wordWrapColumn",
-
+    "editor.wordWrapColumn": 120,
     // Columns at which to show vertical rulers
-    "editor.rulers": [80, 120],
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "workbench.colorTheme": "Gruvbox Dark (Hard)"
 }

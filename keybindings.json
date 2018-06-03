@@ -25,10 +25,26 @@
         "command": "extension.jumpy-line",
         "when": "editorTextFocus"
     },
-    // {
-    //     "key": "shift+alt+-",
-    //     "command": "redo",
-    //     "when": "textInputFocus && !editorReadonly"
-    // },
-
+    {
+        "key": "alt+.",
+        "command": "editor.action.goToDeclaration",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "ctrl+x ctrl+f",
+        "command": "workbench.action.files.openFile"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "-workbench.action.files.openFile"
+    },
+    {
+        "key": "ctrl+x ctrl+b",
+        "command": "workbench.action.showAllEditors"
+    },
+    // 3-key shortcuts don't work in VS Code
+    {
+        "key": "ctrl+x 5",
+        "command": "workbench.action.newWindow"
+    },
 ]
