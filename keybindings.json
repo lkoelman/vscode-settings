@@ -1,0 +1,34 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "key": "alt+/",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+-",
+        "command": "undo",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+-",
+        "command": "redo",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "j j",
+        "command": "extension.jumpy-word",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "j l",
+        "command": "extension.jumpy-line",
+        "when": "editorTextFocus"
+    },
+    // {
+    //     "key": "shift+alt+-",
+    //     "command": "redo",
+    //     "when": "textInputFocus && !editorReadonly"
+    // },
+
+]
