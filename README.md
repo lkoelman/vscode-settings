@@ -1,5 +1,5 @@
 # Extensions
 
-C/C++
-Emacs Friendly Keymap
-jumpy
+- C/C++
+- Emacs Friendly Keymap
+- Code Ace Jump

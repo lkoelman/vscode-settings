@@ -17,13 +17,16 @@
     },
     {
         "key": "j j",
-        "command": "extension.jumpy-word",
+        "command": "extension.aceJump",
         "when": "editorTextFocus"
     },
     {
+        "key": "j s",
+        "command": "workbench.action.gotoSymbol"
+    },
+    {
         "key": "j l",
-        "command": "extension.jumpy-line",
-        "when": "editorTextFocus"
+        "command": "workbench.action.gotoLine"
     },
     {
         "key": "alt+.",
