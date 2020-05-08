@@ -1,14 +1,23 @@
-// Place your key bindings in this file to overwrite the defaults
+// Place your key bindings in this file to override the defaults
+// NOTE: key bindings probided by Emacs Friendly Keymap not listed
 [
     {
         "key": "alt+/",
         "command": "editor.action.triggerSuggest",
         "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
     },
+//    {
+//        "key": "ctrl+shift+-",
+//        "command": "undo",
+//        "when": "textInputFocus && !editorReadonly"
+//    },
     {
-        "key": "ctrl+shift+-",
-        "command": "undo",
-        "when": "textInputFocus && !editorReadonly"
+        "key": "ctrl+alt+s",
+        "command": "editor.action.startFindReplaceAction"
+    },
+    {
+        "key": "ctrl+shift+s",
+        "command": "editor.action.startFindReplaceAction"
     },
     {
         "key": "shift+alt+-",
@@ -16,39 +25,35 @@
         "when": "textInputFocus && !editorReadonly"
     },
     {
-        "key": "j j",
-        "command": "extension.aceJump",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "j s",
+        "key": "alt+j alt+s",
         "command": "workbench.action.gotoSymbol"
     },
     {
-        "key": "j l",
+        "key": "alt+j alt+l",
         "command": "workbench.action.gotoLine"
     },
     {
-        "key": "alt+.",
-        "command": "editor.action.goToDeclaration",
-        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+        "key": "alt+j alt+j",
+        "command": "extension.aceJump.multiChar"
     },
     {
         "key": "ctrl+x ctrl+f",
         "command": "workbench.action.files.openFile"
     },
     {
-        "key": "ctrl+o",
-        "command": "-workbench.action.files.openFile"
-    },
-    {
         "key": "ctrl+x ctrl+b",
         "command": "workbench.action.showAllEditors"
     },
-    // 3-key shortcuts don't work in VS Code
+    // Rebinds, automatically generated
     {
-        "key": "ctrl+x 5",
-        "command": "workbench.action.newWindow"
+        "key": "ctrl+shift+l",
+        "command": "editor.action.insertCursorAtEndOfEachLineSelected",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+i",
+        "command": "-editor.action.insertCursorAtEndOfEachLineSelected",
+        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+shift+n",
@@ -57,15 +62,6 @@
     {
         "key": "ctrl+n",
         "command": "-workbench.action.files.newUntitledFile"
-    },
-    {
-        "key": "ctrl+n",
-        "command": "list.focusDown",
-        "when": "listFocus && !inputFocus"
-    },
-    {
-        "key": "ctrl+p",
-        "command": "list.focusUp",
-        "when": "listFocus && !inputFocus"
-    },
+    }
+
 ]
